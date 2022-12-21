@@ -6,7 +6,7 @@ console.log('运行时配置');
 export async function getInitialState(): Promise<{ name: string }> {
   return { name: '@umijs/max' };
 }
-
+console.log('app.ts');
 export const layout = () => {
   return {
     logo: 'https://img.alicdn.com/tfs/TB1YHEpwUT1gK0jSZFhXXaAtVXa-28-27.svg',
