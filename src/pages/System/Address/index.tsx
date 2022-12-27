@@ -1,9 +1,9 @@
 import { PageContainer, ProTable } from '@ant-design/pro-components';
-import { useModel } from 'umi';
+import { useModel } from '@umijs/max';
 import React from 'react';
 import AddModal from './component/AddModal';
 import { getColumns, getToolBarRender } from './constant';
-import styles from './index.less';
+// import styles from './index.less';
 import { getAddressList } from './service';
 
 const Address: React.FC = () => {
