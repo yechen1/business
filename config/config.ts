@@ -18,7 +18,7 @@ export default defineConfig({
   initialState: {},
   request: {},
 
-  favicons: ['/assets/favicon.ico'],
+  favicons: ['/logo.png'],
   routes: routerConfig,
   plugins: [`${__dirname}/plugin.ts`], // umi 插件配置
   npmClient: 'yarn',
