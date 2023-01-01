@@ -11,4 +11,25 @@ export default [
     path: '/home',
     component: './Home',
   },
+  {
+    path: '/user',
+    layout: false,
+    routes: [
+      {
+        path: '/user',
+        routes: [
+          // 登录
+          {
+            name: 'login',
+            path: '/user/login',
+            component: './user/Login',
+          }
+        ]
+      }
+    ]
+  },
+  {
+    path:'*',
+    component: './Error404'
+  }
 ];

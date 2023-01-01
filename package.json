@@ -11,7 +11,7 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.7.0",
+    "@ant-design/icons": "^4.5.0",
     "@ant-design/pro-card": "^2.1.6",
     "@ant-design/pro-components": "^2.0.1",
     "@ant-design/pro-descriptions": "^2.0.39",
@@ -30,6 +30,7 @@
     "prettier": "^2",
     "prettier-plugin-organize-imports": "^2",
     "prettier-plugin-packagejson": "^2",
+    "stylelint": "^13.0.0",
     "typescript": "^4"
   }
 }

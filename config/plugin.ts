@@ -7,5 +7,11 @@ export default (api: IApi) => {
   api.modifyHTML(($) => {
     return $;
   });
-  // api.addHTMLLinks(() => [{ rel: 'icon', href: `${api.config.publicPath}/favicon.ico`, type: 'image/x-icon' }]);
+  api.addHTMLStyles(() => {
+    return [
+      {
+        content: `html, body, #root { height: 100%; margin: 0; padding: 0; color:red; }`,
+      },
+    ];
+  });
 };
