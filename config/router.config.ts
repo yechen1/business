@@ -1,4 +1,7 @@
+import routes from '../src/routes';
+
 export default [
+  ...routes,
   {
     path: '/',
     redirect: '/home',
@@ -9,13 +12,24 @@ export default [
     component: './Home',
   },
   {
-    name: '权限演示',
-    path: '/access',
-    component: './Access',
+    path: '/user',
+    layout: false,
+    routes: [
+      {
+        path: '/user',
+        routes: [
+          // 登录
+          {
+            name: 'login',
+            path: '/user/login',
+            component: './user/Login',
+          }
+        ]
+      }
+    ]
   },
   {
-    name: ' CRUD 示例',
-    path: '/table',
-    component: './Table',
-  },
+    path:'*',
+    component: './Error404'
+  }
 ];
