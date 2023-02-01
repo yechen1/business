@@ -1,12 +1,18 @@
 @footer-height: 50px;
 .footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    color: #000000;
+    width: calc(100% - 168px);
+    text-align: center;
     height: @footer-height;
-    :global(.ant-pro-global-footer-links) {
-        margin-bottom: 0;
-    }
-    :global(.ant-pro-global-footer) {
-        height: @footer-height;
-        margin: 0;
-        line-height: @footer-height;
-    }
+    // :global(.ant-pro-global-footer-links) {
+    //     margin-bottom: 0;
+    // }
+    // :global(.ant-pro-global-footer) {
+    //     height: @footer-height;
+    //     margin: 0;
+    //     line-height: @footer-height;
+    // }
 }

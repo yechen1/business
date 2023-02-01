@@ -12,7 +12,13 @@ const routes: MenuDataItem[] = [
         path: '/System/Address',
         component: './System/Address',
       },
-    ],
+      // 数据字典配置
+      {
+        name: '字典配置',
+        path: '/System/Dictionary',
+        component: './System/Dictionary',
+      },
+    ] as any,
   },
 ];
 

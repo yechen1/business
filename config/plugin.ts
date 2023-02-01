@@ -10,7 +10,7 @@ export default (api: IApi) => {
   api.addHTMLStyles(() => {
     return [
       {
-        content: `html, body, #root { height: 100%; margin: 0; padding: 0; color:red; }`,
+        content: `html, body, #root { height: 100%; margin: 0; padding: 0; }`,
       },
     ];
   });
