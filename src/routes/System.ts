@@ -6,6 +6,12 @@ const routes: MenuDataItem[] = [
     path: '/System',
 
     routes: [
+      // 用户管理配置
+      {
+        name: '用户配置',
+        path: '/System/User',
+        component: './System/User',
+      },
       // 地址配置
       {
         name: '地址配置',
